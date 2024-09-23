@@ -16,19 +16,24 @@ using namespace std;
 
 int main()
 {
-	const float MILES_TRAVELED = 375,
-		TOTAL_GAL_OF_GAS = 15;
+	float miles_travelled = 0.0; // Initialize with 0.0
+	float total_gal_of_gas = 0.0; // Initialize with 0.0
+	float MPG = 0.0; // Initialize with 0.0;
 
-	float MPG = MILES_TRAVELED / TOTAL_GAL_OF_GAS;
+	//get user unput
+	cout << "Enter the number of miles traveled: ";
+	cin >> miles_travelled;
 
+	cout << "Enter the total gallons of gas used: ";
+	cin >> total_gal_of_gas;
+
+	//Calculate MPG
+	MPG = miles_travelled / total_gal_of_gas;
+
+	//Display the result
 	cout << endl;
-	cout << "A car that holds 15 gallons of gas and that \n ";
-	cout << "can travel 375 miles miles before refuiling will \n";
-	cout << "use " << MPG << " Miles Per Gallon.\n";
+	cout << "The car gets " << MPG << " miles per gallon. \n";
 	cout << endl;
-
-
-
 
 	return 0;
 
